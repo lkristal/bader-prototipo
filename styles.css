@@ -64,3 +64,19 @@
 
     /* Footer */
     footer a{color:#111; text-decoration:none;}
+
+    /* Posiciona el submenú hacia la derecha */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+/* Mostrar submenú al hacer hover */
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}

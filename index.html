@@ -60,7 +60,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Ofertas</a>
@@ -69,19 +69,71 @@
                 <a class="nav-link" href="#">Promociones</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Productos
+                <a class="nav-link dropdown-toggle" href="#" role="button"
+                  data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                  Catálogo
                 </a>
+
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="categoría.html">Instrumental Odontológico</a></li>
-                  <li><a class="dropdown-item" href="categoría.html">Formación</a></li>
+
+                  <!-- Instrumental -->
+                  <li>
+                    <a class="dropdown-item d-flex justify-content-between align-items-center"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#instrumentalSubmenu"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="instrumentalSubmenu">
+                      Instrumental
+                      <span>▸</span>
+                    </a>
+
+                    <!-- IMPORTANTE: NO debe tener class="show" -->
+                    <div class="collapse" id="instrumentalSubmenu">
+                      <ul class="list-unstyled mb-0 ps-3">
+                        <li><a class="dropdown-item" href="categoría.html">Instrumental de Mano</a></li>
+                        <li><a class="dropdown-item" href="categoría.html">Aislamiento</a></li>
+                        <li><a class="dropdown-item" href="categoría.html">Endodoncia</a></li>
+                        <li><a class="dropdown-item" href="categoría.html">Periodoncia</a></li>
+                        <li><a class="dropdown-item" href="categoría.html">Ortodoncia</a></li>
+                        <li><a class="dropdown-item" href="categoría.html">Implantología</a></li>
+                        <li><a class="dropdown-item" href="categoría.html">Odontología General</a></li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li><a class="dropdown-item" href="categoría.html">Modelos</a></li>
                   <li><a class="dropdown-item" href="categoría.html">Mobiliario</a></li>
                   <li><a class="dropdown-item" href="categoría.html">Laboratorio Dental</a></li>
-                  <li><a class="dropdown-item" href="categoría.html">Fotografía</a></li>
+                  <li><a class="dropdown-item" href="categoría.html">Sillones</a></li>
                   <li><a class="dropdown-item" href="categoría.html">Rotatorios</a></li>
-                  <li><a class="dropdown-item" href="categoría.html">Suturas</a></li>
+                  <li><a class="dropdown-item" href="categoría.html">Equipamiento</a></li>
+                  <li><a class="dropdown-item" href="categoría.html">Otros</a></li>
+
                 </ul>
               </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Formación
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Cursos de Especialidades</a></li>
+                  <li><a class="dropdown-item" href="#">Dictantes</a></li>
+                  <li><a class="dropdown-item" href="#">Workshops</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Post-Venta
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Compra de Repuestos</a></li>
+                  <li><a class="dropdown-item" href="#">Servicio Técnico Oficial</a></li>
+                  <li><a class="dropdown-item" href="#">Asistencia técnica</a></li>
+                </ul>
+              </li>
+              
               <li class="nav-item">
                 <a class="nav-link" href="#">Contacto</a>
               </li>
@@ -283,9 +335,8 @@
   <!-- FOOTER -->
   <footer class="border-top py-4 mt-4">
     <div class="container d-flex flex-wrap gap-3">
-      <a href="#">Categorías</a>
-      <a href="#">Promociones</a>
-      <a href="#">Ofertas</a>
+      <a href="#">Post Venta</a>
+      <a href="#">Garantias</a>
       <a href="#">Quienes somos</a>
       <a href="#">Contacto</a>
 
