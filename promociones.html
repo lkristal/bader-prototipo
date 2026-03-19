@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fantomas – Baja fidelidad</title>
+  <title>Bader Home – Baja fidelidad </title>
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
@@ -11,7 +11,7 @@
 </head>
 <body>
 
-   <!-- TOP BAR – PROMOCIÓN BANCARIA (mostrar solo si hay promo activa) -->
+  <!-- TOP BAR – PROMOCIÓN BANCARIA (mostrar solo si hay promo activa) -->
   <div id="topPromo" class="border-bottom">
     <div class="container py-2 d-flex flex-wrap align-items-center gap-3">
       <span>💳 6 y 12 cuotas sin interés con bancos seleccionados</span>
@@ -148,131 +148,49 @@
     </div>
   </header>
 
-  <!-- ==================================== -->
-  <!-- SECCIÓN PRINCIPAL – ABOVE THE FOLD    -->
-  <!-- ==================================== -->
-  <section class="wf-section">
-    <div class="container">
-      <div class="row g-4">
-        <!-- Galería de imágenes -->
-        <div class="col-12 col-lg-6">
-          <div class="placeholder-box x-lg x mb-3" aria-label="Foto principal con zoom"></div>
-          <div class="d-flex gap-2">
-            <div class="placeholder-box x-sm x flex-fill thumb active" aria-label="Miniatura 1"></div>
-            <div class="placeholder-box x-sm x flex-fill thumb" aria-label="Miniatura 2"></div>
-            <div class="placeholder-box x-sm x flex-fill thumb" aria-label="Miniatura 3"></div>
-            <div class="placeholder-box x-sm x flex-fill thumb thumb-video" aria-label="Miniatura video"></div>
-          </div>
-          <div class="small-muted mt-2">*Zoom a modo ilustrativo en wireframe</div>
+    <!-- CONTENIDO PRINCIPAL -->
+
+    <main class="container my-4">
+      <h1 class="mb-4">Promociones Activas</h1>
+        <div class="row g-4">
+            <!-- Promo 1 -->
+            <div class="col-md-12">
+                <img src="images/promo-galicia.jpg" class="card-img-top" alt="Promoción 1">
+            </div>
+            <div class="col-md-12">
+                <img src="images/promo-ml.jpg" class="card-img-top" alt="Promoción 1">
+            </div>
+            <div class="col-md-12">
+                <img src="images/promo-modo.jpg" class="card-img-top" alt="Promoción 1">
+            </div>
+            <div class="col-md-12">
+                <img src="images/promo-payway.jpg" class="card-img-top" alt="Promoción 1">
+            </div>
         </div>
+    </main>
+      <!-- FOOTER -->
+    <footer class="border-top py-4 mt-4">
+        <div class="container d-flex flex-wrap gap-3">
+        <a href="#">Post Venta</a>
+        <a href="#">Garantias</a>
+        <a href="#">Quienes somos</a>
+        <a href="#">Contacto</a>
 
-        <!-- Información del producto -->
-         
-        <div class="col-12 col-lg-6">
-          <!-- 1) Breadcrumb arriba del título -->
-          <nav class="wf-breadcrumb mb-2" aria-label="breadcrumb">
-            <ol class="breadcrumb mb-1">
-              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-              <li class="breadcrumb-item"><a href="#">Tipodontos odontológicos</a></li>
-            </ol>
-          </nav>
-
-          <h1 class="h3 fw-bold mb-2">Tipodonto Modelo 1</h1>
-          <div class="mb-1"><span class="small-muted">Marca:</span> <strong>BADER</strong></div>
-          <div class="mb-3"><span class="small-muted">Código / SKU:</span> <strong>09050600</strong></div>
-
-          <div class="price price-lg mb-2"><span class="price-chip">$ XXXXX</span></div>
-
-          <div class="mb-3 stock-ok">Stock: Disponible</div>
-
-          <div class="d-flex align-items-start gap-2 mb-3">
-            <div>💳</div>
-            <div>Hasta 12 cuotas sin interés – <a href="#">Ver promociones</a></div>
-          </div>
-
-          <div class="d-grid d-md-flex gap-2 mb-3">
-            <button class="btn wf-btn btn-lg w-100 w-md-auto">AGREGAR AL CARRITO</button>
-            <button class="btn wf-btn btn-lg w-100 w-md-auto">COMPRAR AHORA</button>
-          </div>
-
-          <div class="wf-card p-3">
-            <div class="fw-semibold mb-2">Envío / Retiro</div>
-            <ul class="mb-0 small">
-              <li>Calculá el costo de envío al finalizar la compra.</li>
-              <li>Retiro sin cargo por sucursal (coordinar).</li>
-            </ul>
-          </div>
+        <!-- Redes a la derecha -->
+        <div class="ms-auto d-flex align-items-center gap-3">
+        <!-- Bootstrap Icons -->
+        <a href="https://www.instagram.com/tu_cuenta" aria-label="Instagram" class="text-dark">
+          <i class="bi bi-instagram fs-4"></i>
+        </a>
+        <a href="https://www.tiktok.com/@tu_cuenta" aria-label="TikTok" class="text-dark">
+          <i class="bi bi-tiktok fs-4"></i>
+        </a>
+        <a href="https://wa.me/54911XXXXXXXX" aria-label="WhatsApp" class="text-dark">
+          <i class="bi bi-whatsapp fs-4"></i>
+        </a>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================= -->
-  <!-- DESCRIPCIÓN CORTA       -->
-  <!-- ======================= -->
-  <section class="wf-section pt-0">
-    <div class="container">
-      <div class="wf-card p-3">
-        <div class="fw-semibold mb-2">Descripción </div>
-        <p class="mb-0">Descripción rápida orientada a decisión de compra.</p>
-        <a href="#" class="btn wf-btn">Ficha Técnica</a>
-        <a href="#" class="btn wf-btn">Catálogo</a>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- ======================= -->
-  <!-- PRODUCTOS RELACIONADOS  -->
-  <!-- ======================= -->
-  <section class="wf-section">
-    <div class="container">
-      <div class="wf-title mb-3">Productos relacionados</div>
-
-      <div class="mb-2 fw-semibold">Productos para acompañar tu compra</div>
-      <div class="row g-3 mb-4">
-        <div class="col-6 col-md-3"><div class="card wf-card p-2"><div class="placeholder-box x-md x"></div><div class="p-2 small">Producto A</div></div></div>
-        <div class="col-6 col-md-3"><div class="card wf-card p-2"><div class="placeholder-box x-md x"></div><div class="p-2 small">Producto B</div></div></div>
-        <div class="col-6 col-md-3"><div class="card wf-card p-2"><div class="placeholder-box x-md x"></div><div class="p-2 small">Producto C</div></div></div>
-        <div class="col-6 col-md-3"><div class="card wf-card p-2"><div class="placeholder-box x-md x"></div><div class="p-2 small">Producto D</div></div></div>
-      </div>
-
-      <div class="mb-2 fw-semibold">Otros tipodontos</div>
-      <div class="row g-3 mb-4">
-        <div class="col-6 col-md-3"><div class="card wf-card p-2"><div class="placeholder-box x-md x"></div><div class="p-2 small">Producto E</div></div></div>
-        <div class="col-6 col-md-3"><div class="card wf-card p-2"><div class="placeholder-box x-md x"></div><div class="p-2 small">Producto F</div></div></div>
-        <div class="col-6 col-md-3"><div class="card wf-card p-2"><div class="placeholder-box x-md x"></div><div class="p-2 small">Producto G</div></div></div>
-        <div class="col-6 col-md-3"><div class="card wf-card p-2"><div class="placeholder-box x-md x"></div><div class="p-2 small">Producto H</div></div></div>
-      </div>
-  </section>
-
-  <!-- =================== -->
-  <!-- BLOQUE DE CONFIANZA -->
-  <!-- =================== -->
-  <section class="wf-section">
-    <div class="container">
-      <div class="wf-title mb-3">Bloque de confianza</div>
-      <ul class="mb-0">
-        <li>✔ Medios de pago</li>
-        <li>✔ Promociones bancarias</li>
-        <li>✔ Envíos</li>
-        <li>✔ Soporte especializado</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ======= FOOTER ======= -->
-  <footer class="border-top py-4 mt-4">
-    <div class="container d-flex flex-wrap gap-3">
-      <a href="#">Categorías</a>
-      <a href="#">Promociones</a>
-      <a href="#">Marcas</a>
-      <a href="#">Soporte</a>
-      <a href="#">Contacto</a>
-      <a href="#">Redes</a>
-    </div>
-  </footer>
+        </div>
+    </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
